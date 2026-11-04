@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Giovana Machado Advogada | Conceito visual</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400;1,9..144,600&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ameixa:#3B1E33; --ameixa-2:#55304A; --argila:#C98B7E; --argila-esc:#A96A5D;
+  --blush:#F3DCD3; --blush-2:#F8E9E3; --creme:#FCF7F3; --salvia:#8C9B7A; --tinta:#2B1A26; --texto:#5A4753;
+  --serif:'Fraunces', Georgia, serif; --sans:'DM Sans', system-ui, sans-serif;
+  --u:'https://images.unsplash.com/';
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;overflow-x:clip}
+body{font-family:var(--sans);color:var(--texto);background:var(--creme);line-height:1.6;font-size:16px;overflow-x:clip}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--serif);color:var(--tinta);font-weight:400;line-height:1.08;letter-spacing:-.01em}
+h1{font-size:clamp(44px,6.4vw,84px)}
+h2{font-size:clamp(34px,4.4vw,56px)}
+h3{font-size:24px;font-weight:600}
+em{font-style:italic;color:var(--argila-esc)}
+.pill{display:inline-flex;align-items:center;gap:8px;padding:7px 14px;border-radius:999px;background:var(--blush);color:var(--ameixa);font-size:13px;font-weight:500}
+.pill i{width:7px;height:7px;border-radius:50%;background:var(--argila);display:block}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 28px;border-radius:999px;font-weight:500;font-size:15px;transition:.25s}
+.btn-p{background:var(--ameixa);color:#fff}.btn-p:hover{background:var(--argila-esc)}
+.btn-l{color:var(--ameixa);border-bottom:1.5px solid var(--argila);border-radius:0;padding:6px 0}
+.risco{position:relative;white-space:nowrap}
+.risco svg{position:absolute;left:-4%;bottom:-.18em;width:108%;height:.4em}
+.foto{background:var(--blush) center/cover no-repeat}
+.aviso{background:var(--ameixa);color:var(--blush);font-size:12.5px;text-align:center;padding:8px 16px}
+
+/* header */
+header{position:sticky;top:0;z-index:20;background:rgba(252,247,243,.92);backdrop-filter:blur(10px)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:84px}
+.marca{font-family:var(--serif);font-size:26px;color:var(--ameixa);line-height:1}
+.marca span{display:block;font-family:var(--sans);font-size:10.5px;letter-spacing:.32em;text-transform:uppercase;color:var(--argila-esc);margin-top:5px}
+.menu{display:flex;gap:34px;font-size:15px}
+.menu a:hover{color:var(--argila-esc)}
+.nav .btn{padding:12px 22px;font-size:14px}
+
+/* hero */
+.hero{position:relative;padding:40px 0 110px}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.hero p.lead{font-size:19px;margin:26px 0 38px;max-width:520px}
+.ctas{display:flex;gap:28px;align-items:center;flex-wrap:wrap}
+.hero-visual{position:relative;height:640px}
+.blob{position:absolute;border-radius:50%}
+.b1{width:520px;height:520px;background:var(--blush);right:-40px;top:40px;border-radius:46% 54% 58% 42%/48% 40% 60% 52%}
+.b2{width:120px;height:120px;background:var(--salvia);left:10px;bottom:70px;opacity:.85}
+.arco{position:absolute;right:30px;top:0;width:400px;height:560px;border-radius:220px 220px 24px 24px;overflow:hidden;box-shadow:0 30px 60px rgba(59,30,51,.18)}
+.arco .foto{width:100%;height:100%;background-image:url('https://images.unsplash.com/photo-1685760259914-ee8d2c92d2e0?w=900&q=80&auto=format&fit=crop')}
+.cartao{position:absolute;left:0;top:120px;background:#fff;border-radius:18px;padding:18px 20px;width:250px;box-shadow:0 18px 40px rgba(59,30,51,.12);font-size:14px}
+.cartao b{font-family:var(--serif);font-weight:600;font-size:18px;color:var(--ameixa);display:block;margin-bottom:4px}
+.selo{position:absolute;right:0;bottom:30px;width:150px;height:150px;border-radius:50%;background:var(--ameixa);color:var(--blush);display:flex;align-items:center;justify-content:center;text-align:center;font-family:var(--serif);font-style:italic;font-size:19px;line-height:1.15;padding:20px;transform:rotate(-8deg)}
+
+/* faixa */
+.faixa{background:var(--ameixa);color:var(--blush);overflow:hidden;padding:22px 0;transform:rotate(-1.2deg);margin:0 -20px}
+.faixa div{display:flex;gap:48px;white-space:nowrap;font-family:var(--serif);font-style:italic;font-size:30px;animation:corre 32s linear infinite;width:max-content}
+.faixa span:nth-child(even){color:var(--argila)}
+@keyframes corre{to{transform:translateX(-50%)}}
+
+/* áreas */
+.areas{padding:120px 0 110px}
+.topo{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:56px}
+.topo p{max-width:420px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:#fff;border-radius:26px;padding:34px 30px 30px;transition:.3s;border:1px solid #F0E2DB;position:relative;overflow:hidden}
+.card:before{content:"";position:absolute;width:140px;height:140px;border-radius:50%;background:var(--blush-2);right:-50px;top:-50px;transition:.3s}
+.card:hover{transform:translateY(-6px);box-shadow:0 22px 44px rgba(59,30,51,.10)}
+.card:hover:before{background:var(--blush);transform:scale(1.3)}
+.card .ic{width:48px;height:48px;border-radius:14px;background:var(--blush);display:flex;align-items:center;justify-content:center;margin-bottom:26px;position:relative}
+.card h3{margin-bottom:10px;position:relative}
+.card p{font-size:15px;position:relative}
+
+/* perspectiva */
+.persp{background:var(--blush-2);padding:120px 0;position:relative;overflow:hidden}
+.persp .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:80px;align-items:center}
+.duo{position:relative;height:560px}
+.duo .f1{position:absolute;left:0;top:0;width:78%;height:420px;border-radius:30px;background-image:url('https://images.unsplash.com/photo-1520857014576-2c4f4c972b57?w=900&q=80&auto=format&fit=crop')}
+.duo .f2{position:absolute;right:0;bottom:0;width:52%;height:300px;border-radius:150px 150px 30px 30px;border:10px solid var(--blush-2);background-image:url('https://images.unsplash.com/photo-1573497620053-ea5300f94f21?w=700&q=80&auto=format&fit=crop')}
+.persp p.intro{font-size:18px;margin:22px 0 34px}
+.itens{display:grid;grid-template-columns:1fr 1fr;gap:22px 28px}
+.itens div{border-top:1.5px solid var(--argila);padding-top:14px}
+.itens b{display:block;font-family:var(--serif);font-weight:600;font-size:19px;color:var(--ameixa);margin-bottom:4px}
+.itens p{font-size:14.5px}
+
+/* frase */
+.frase{padding:120px 0;text-align:center}
+.frase blockquote{font-family:var(--serif);font-size:clamp(30px,3.8vw,48px);color:var(--ameixa);line-height:1.2;max-width:900px;margin:0 auto}
+.frase cite{display:block;margin-top:24px;font-style:normal;font-size:14px;letter-spacing:.2em;text-transform:uppercase;color:var(--argila-esc)}
+
+/* processo */
+.proc{background:var(--ameixa);color:#E9D6D1;padding:110px 0;border-radius:48px;margin:0 16px}
+.proc h2{color:#fff}
+.proc .pill{background:var(--ameixa-2);color:var(--blush)}
+.passos{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:56px}
+.passo{background:var(--ameixa-2);border-radius:24px;padding:30px 26px}
+.passo .n{font-family:var(--serif);font-style:italic;font-size:46px;color:var(--argila);line-height:1;margin-bottom:22px}
+.passo h3{color:#fff;font-size:21px;margin-bottom:8px}
+.passo p{font-size:14.5px}
+
+/* sobre */
+.sobre{padding:130px 0}
+.sobre .wrap{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.sobre-vis{position:relative}
+.sobre-vis .foto{aspect-ratio:4/5;border-radius:30px;background-image:url('https://images.unsplash.com/photo-1762341104634-998bbee0ccba?w=900&q=80&auto=format&fit=crop')}
+.sobre-vis .tag{position:absolute;left:-20px;bottom:40px;background:var(--salvia);color:#fff;border-radius:18px;padding:16px 20px;font-size:14px;max-width:220px}
+.sobre-vis .tag b{display:block;font-family:var(--serif);font-size:20px;font-weight:600}
+.sobre p{margin:18px 0}
+.assin{font-family:var(--serif);font-style:italic;font-size:34px;color:var(--argila-esc);margin:10px 0 28px}
+
+/* conteúdos */
+.cont{padding:0 0 120px}
+.posts{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:22px}
+.post{background:#fff;border-radius:26px;padding:30px;display:flex;flex-direction:column;justify-content:space-between;min-height:280px;border:1px solid #F0E2DB;transition:.3s}
+.post:hover{background:var(--blush-2)}
+.post.dest{background:var(--argila);color:#fff;border:none}
+.post.dest h3{color:#fff;font-size:30px}
+.post.dest .pill{background:rgba(255,255,255,.2);color:#fff}
+.post h3{font-size:23px;margin:18px 0}
+.post .pill{align-self:flex-start}
+.post a{font-weight:500;font-size:14.5px}
+
+/* faq */
+.faq{padding:0 0 120px}
+.faq .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:72px}
+details{background:#fff;border-radius:20px;padding:22px 26px;margin-bottom:12px;border:1px solid #F0E2DB}
+summary{cursor:pointer;list-style:none;font-family:var(--serif);font-size:21px;color:var(--tinta);display:flex;justify-content:space-between;gap:20px}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";width:30px;height:30px;flex:none;border-radius:50%;background:var(--blush);color:var(--ameixa);display:flex;align-items:center;justify-content:center;font-family:var(--sans);font-size:18px}
+details[open] summary:after{content:"×"}
+details p{margin-top:12px;font-size:15.5px}
+
+/* cta */
+.final{margin:0 16px;border-radius:48px;overflow:hidden;position:relative;color:#fff;min-height:520px;display:flex;align-items:center}
+.final .foto{position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1573497620053-ea5300f94f21?w=1600&q=80&auto=format&fit=crop');background-position:center 30%}
+.final:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(59,30,51,.94) 0%,rgba(59,30,51,.75) 45%,rgba(59,30,51,.15) 100%)}
+.final .wrap{position:relative;z-index:1;width:100%}
+.final h2{color:#fff;max-width:600px;margin:18px 0}
+.final p{max-width:480px;margin-bottom:34px;color:#F1DCD6}
+.final .pill{background:rgba(255,255,255,.15);color:#fff}
+.final .btn-p{background:var(--argila)}.final .btn-p:hover{background:#fff;color:var(--ameixa)}
+
+footer{padding:80px 0 34px;font-size:14px}
+.fgrid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:40px;margin-bottom:46px}
+footer h4{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--argila-esc);margin-bottom:14px}
+footer li{list-style:none;margin-bottom:8px}
+.legal{border-top:1px solid #EBDDD5;padding-top:22px;font-size:12.5px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+
+@media (max-width:960px){
+  .menu{display:none}
+  .hero .wrap,.persp .wrap,.sobre .wrap,.faq .wrap{grid-template-columns:1fr;gap:48px}
+  .hero-visual{height:560px;max-width:460px;margin:0 auto;width:100%}
+  .arco{width:78%;right:0;height:500px}
+  .b1{width:100%;height:440px;right:-20px}
+  .cards,.posts{grid-template-columns:1fr}
+  .passos{grid-template-columns:1fr 1fr}
+  .topo{flex-direction:column;align-items:start}
+  .fgrid{grid-template-columns:1fr}
+  .duo{height:460px}
+  .sobre-vis .tag{left:12px}
+}
+@media (max-width:560px){
+  .wrap{padding:0 16px}
+  .nav .btn{display:none}
+  .hero{padding:20px 0 80px}
+  .hero-visual{height:480px}
+  .arco{height:430px}
+  .cartao{width:200px;top:auto;bottom:10px;left:0}
+  .selo{width:110px;height:110px;font-size:15px;top:10px;bottom:auto;right:-6px}
+  .itens,.passos{grid-template-columns:1fr}
+  .proc,.final{margin:0 8px;border-radius:32px}
+  .faixa div{font-size:22px}
+}
+</style>
+</head>
+<body>
+
+<div class="aviso">Conceito visual</div>
+
+<header>
+  <div class="wrap nav">
+    <a href="#" class="marca">Giovana Machado<span>Advogada</span></a>
+    <nav class="menu"><a href="#atuacao">Atuação</a><a href="#perspectiva">Para mulheres</a><a href="#sobre">Sobre</a><a href="#conteudos">Conteúdos</a></nav>
+    <a href="#contato" class="btn btn-p">Agendar conversa</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="pill"><i></i>Direito de Família e Sucessões</span>
+      <h1 style="margin-top:24px">Seus direitos, explicados <em>com calma</em> e defendidos com <span class="risco">firmeza.<svg viewBox="0 0 200 20" preserveAspectRatio="none"><path d="M3 14 C 50 4, 120 4, 197 10" stroke="#C98B7E" stroke-width="5" fill="none" stroke-linecap="round"/></svg></span></h1>
+      <p class="lead">Sou advogada de família e atuo com perspectiva de gênero. Ajudo mulheres a atravessar divórcio, guarda, pensão e herança sabendo exatamente onde estão pisando.</p>
+      <div class="ctas">
+        <a href="#contato" class="btn btn-p">Agendar uma conversa →</a>
+        <a href="#atuacao" class="btn-l">Como posso ajudar</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="blob b1"></div>
+      <div class="blob b2"></div>
+      <div class="arco"><div class="foto"></div></div>
+      <div class="cartao"><b>Atendimento reservado</b>Presencial ou online, com sigilo e linguagem simples.</div>
+      <div class="selo">de mulher para mulher</div>
+    </div>
+  </div>
+</section>
+
+<div class="faixa"><div>
+  <span>Escuta</span><span>Clareza</span><span>Segurança</span><span>Direitos das mulheres</span><span>Família</span><span>Autonomia</span>
+  <span>Escuta</span><span>Clareza</span><span>Segurança</span><span>Direitos das mulheres</span><span>Família</span><span>Autonomia</span>
+</div></div>
+
+<section class="areas" id="atuacao">
+  <div class="wrap">
+    <div class="topo">
+      <div><span class="pill"><i></i>Áreas de atuação</span><h2 style="margin-top:16px">Para cada fase, <em>um caminho</em></h2></div>
+      <p>Mudanças na família mexem com a rotina, o dinheiro e as emoções. Você não precisa resolver tudo sozinha.</p>
+    </div>
+    <div class="cards">
+      <div class="card"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3B1E33" stroke-width="1.8"><path d="M7 12h10M12 7v10" transform="rotate(45 12 12)"/></svg></div><h3>Divórcio e união estável</h3><p>Consensual ou litigioso, em cartório ou na Justiça, do jeito mais seguro para você.</p></div>
+      <div class="card"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3B1E33" stroke-width="1.8"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="10" r="2.4"/><path d="M3 20c0-3 2.5-5 5-5s5 2 5 5M13 20c0-2 1.5-3.6 3-3.6s3 1.6 3 3.6"/></svg></div><h3>Guarda e convivência</h3><p>Organização da rotina dos filhos com foco no bem-estar deles e na sua tranquilidade.</p></div>
+      <div class="card"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3B1E33" stroke-width="1.8"><rect x="3" y="6" width="18" height="12" rx="3"/><circle cx="12" cy="12" r="2.5"/></svg></div><h3>Pensão alimentícia</h3><p>Pedido, revisão e cobrança, considerando a realidade de quem cuida no dia a dia.</p></div>
+      <div class="card"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3B1E33" stroke-width="1.8"><path d="M4 11l8-6 8 6v8a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1z"/><path d="M12 20v-6"/></svg></div><h3>Partilha de bens</h3><p>Levantamento do patrimônio e divisão justa, inclusive de bens que não aparecem de cara.</p></div>
+      <div class="card"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3B1E33" stroke-width="1.8"><path d="M6 3h9l3 3v15H6z"/><path d="M9 11h6M9 15h6"/></svg></div><h3>Inventário e herança</h3><p>Inventário judicial ou em cartório, com orientação clara em um momento delicado.</p></div>
+      <div class="card"><div class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3B1E33" stroke-width="1.8"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10z"/></svg></div><h3>Planejamento sucessório</h3><p>Testamento e doações para proteger quem você ama e evitar conflitos no futuro.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="persp" id="perspectiva">
+  <div class="wrap">
+    <div class="duo"><div class="foto f1"></div><div class="foto f2"></div></div>
+    <div>
+      <span class="pill"><i></i>Perspectiva de gênero</span>
+      <h2 style="margin-top:16px">O que não está no papel <em>também conta</em></h2>
+      <p class="intro">Atuar com perspectiva de gênero é olhar para as desigualdades que pesam sobre as mulheres em cada caso. O Conselho Nacional de Justiça orienta o Judiciário a julgar com esse mesmo olhar.</p>
+      <div class="itens">
+        <div><b>Trabalho de cuidado</b><p>Anos dedicados à casa e aos filhos contam na partilha e na pensão.</p></div>
+        <div><b>Independência financeira</b><p>Um caminho seguro para quem ficou sem renda própria.</p></div>
+        <div><b>Violência patrimonial</b><p>Controle de dinheiro e bens escondidos também são violência.</p></div>
+        <div><b>Informação</b><p>Nenhuma decisão importante tomada no escuro.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="frase">
+  <div class="wrap">
+    <blockquote>“Toda mulher merece entender seus direitos <em>antes</em> de assinar qualquer acordo.”</blockquote>
+    <cite>Frase sugerida, a validar com a Giovana</cite>
+  </div>
+</section>
+
+<section class="proc">
+  <div class="wrap">
+    <span class="pill"><i></i>Como funciona</span>
+    <h2 style="margin-top:16px">Do primeiro oi ao fim do processo</h2>
+    <div class="passos">
+      <div class="passo"><div class="n">01</div><h3>Primeira conversa</h3><p>Você conta sua história no seu tempo, sem julgamento.</p></div>
+      <div class="passo"><div class="n">02</div><h3>Análise do caso</h3><p>Estudo documentos e caminhos possíveis, na Justiça ou em cartório.</p></div>
+      <div class="passo"><div class="n">03</div><h3>Plano e honorários</h3><p>Estratégia e valores explicados por escrito antes de começar.</p></div>
+      <div class="passo"><div class="n">04</div><h3>Acompanhamento</h3><p>Atualizações em cada etapa, em linguagem simples.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sobre" id="sobre">
+  <div class="wrap">
+    <div class="sobre-vis"><div class="foto"></div><div class="tag"><b>OAB/UF 00.000</b>Atendimento em [cidade] e online</div></div>
+    <div>
+      <span class="pill"><i></i>Sobre mim</span>
+      <h2 style="margin-top:16px">Prazer, eu sou a <em>Giovana</em></h2>
+      <p>[Bio a definir com a Giovana: formação, trajetória e o que a levou a escolher o Direito de Família com foco nos direitos das mulheres.]</p>
+      <p>[Um parágrafo pessoal e próximo, no tom dela, sobre como gosta de atender.]</p>
+      <div class="assin">Giovana Machado</div>
+      <a href="#" class="btn-l">Conhecer minha trajetória →</a>
+    </div>
+  </div>
+</section>
+
+<section class="cont" id="conteudos">
+  <div class="wrap">
+    <div class="topo">
+      <div><span class="pill"><i></i>Conteúdos</span><h2 style="margin-top:16px">Informação que <em>acolhe</em></h2></div>
+      <a href="#" class="btn-l">Ver todos os artigos →</a>
+    </div>
+    <div class="posts">
+      <div class="post dest"><span class="pill">Divórcio</span><h3>Vou me separar. Por onde eu começo?</h3><a href="#">Ler artigo →</a></div>
+      <div class="post"><span class="pill">Pensão</span><h3>O que entra no cálculo da pensão alimentícia</h3><a href="#">Ler artigo →</a></div>
+      <div class="post"><span class="pill">Herança</span><h3>O que muda quando existe testamento</h3><a href="#">Ler artigo →</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="wrap">
+    <div><span class="pill"><i></i>Dúvidas frequentes</span><h2 style="margin-top:16px">Perguntas que <em>sempre</em> aparecem</h2></div>
+    <div>
+      <details open><summary>Preciso de advogada para fazer divórcio em cartório?</summary><p>Sim. Mesmo no divórcio extrajudicial, a lei exige a presença de advogada ou advogado para orientar e assinar a escritura.</p></details>
+      <details><summary>O atendimento pode ser online?</summary><p>[Resposta a confirmar com a Giovana.]</p></details>
+      <details><summary>Como funciona a primeira conversa?</summary><p>[Resposta a confirmar: duração, formato e valores.]</p></details>
+      <details><summary>O que eu conto fica em sigilo?</summary><p>Sim. O sigilo profissional é um dever da advocacia e vale desde o primeiro contato.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="final" id="contato">
+  <div class="foto"></div>
+  <div class="wrap">
+    <span class="pill"><i></i>Vamos conversar</span>
+    <h2>Você não precisa decidir nada <em style="color:var(--blush)">sozinha.</em></h2>
+    <p>Me conte um pouco da sua situação. O retorno é feito por mim, com sigilo e sem compromisso de contratação.</p>
+    <a href="#" class="btn btn-p">Falar pelo WhatsApp →</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div><a href="#" class="marca">Giovana Machado<span>Advogada</span></a><p style="margin-top:18px;max-width:320px">Direito de Família e Sucessões com perspectiva de gênero.</p></div>
+      <div><h4>Contato</h4><ul><li>(00) 00000-0000</li><li>contato@giovanamachado.adv.br</li><li>Endereço do escritório</li></ul></div>
+      <div><h4>Redes</h4><ul><li>Instagram</li><li>LinkedIn</li></ul></div>
+    </div>
+    <div class="legal"><span>Giovana Machado · OAB/UF 00.000</span><span>Conteúdo informativo, de acordo com o Provimento 205/2021 da OAB.</span></div>
+  </div>
+</footer>
+</body>
+</html>
